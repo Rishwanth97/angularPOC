@@ -1,0 +1,3 @@
+<div class="events-container">
+    <events-list-thumbnail *ngFor="let event of events" [event]="event" (eventClick)="handleClickEvent($event)"></events-list-thumbnail>
+</div>

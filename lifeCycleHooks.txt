@@ -1,0 +1,17 @@
+Lifecycle Hooks with sequence and called time: 
+
+1. ngOnChanges: 
+    This hook is called before ngOnInIt hook( if there are any inputs in the component) or also
+    whenever an input property changes.
+
+2. ngOnInIt: 
+    this is hook is called first after ngOnChanges and only once. This hook is also called if ngOnChanges is not present.
+
+3. ngDoCheck: 
+    Called immediately after the onChanges and after first run of ngOnInIt.
+
+4. ngAfterContentInIt: 
+5. ngAfterContentChecked:
+6. ngAfterViewInIt:
+7. ngAfterViewChecked:
+8. ngDestroy:

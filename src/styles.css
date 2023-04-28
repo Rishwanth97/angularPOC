@@ -1,1 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #b2b5e0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.defaultButton {
+  background-color: #063984 !important;
+}
+
+.container {
+  margin: 3rem auto;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+html {
+  height: 100%;
+}
+.weather-card {
+  height: 54vh;
+  width: 250px;
+  background-color: rgb(15, 94, 191);
+  background-image: linear-gradient(
+    rgb(56, 119, 198),
+    rgb(13, 73, 147),
+    rgb(4, 27, 55)
+  );
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.weather-card .temp {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin: 5rem 5rem 0rem;
+}
+p {
+  margin: 0;
+}
+
+.current-day {
+  margin-left: 96px !important;
+  margin-top: 10px !important;
+  color: white;
+}
+.end-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.next-day {
+  left: 10px;
+  position: absolute;
+  bottom: 10px;
+  color: white;
+}
+
+.next-day-temp {
+  right: 10px;
+  position: absolute;
+  bottom: 10px;
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

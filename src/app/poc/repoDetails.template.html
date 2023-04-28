@@ -1,0 +1,23 @@
+<div>
+    <div>
+        <mat-icon aria-hidden="false" aria-label="Example back icon" fontIcon="back-arrow"></mat-icon>
+    </div>
+    <div class="details-card row">
+        <div class="col-md-2">
+            <img src="{{repoDetails.owner?.avatar_url}}" alt="profile img" width="200" height="300"/>
+        </div>
+        <div class="col-md-10">
+            <p>Name: <span>{{repoDetails.owner?.login}}</span></p>
+                <p>Description: <span>{{repoDetails.description}} </span></p>
+                <p>Owner: <span>{{repoDetails.description}} </span></p>
+                <p>Created: <span>{{repoDetails.created_at}} </span></p>
+                <p>privateUser: <span>{{repoDetails.private ? "Yes" : "No"}} </span></p>
+                <p>Repo Url: <a href="{{repoDetails.html_url}}" target="_blank">click here</a></p>
+                <p>Topics:</p>
+                <ul>
+                    <li *ngFor="let topic of repoDetails.topics">{{topic}}</li>
+                </ul>
+
+        </div>
+    </div>
+</div>
